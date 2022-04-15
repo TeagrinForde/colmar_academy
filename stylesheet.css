@@ -2,6 +2,7 @@ html {
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
+    color: #494441bb;
 }
 
 #logo {
@@ -16,32 +17,58 @@ html {
     align-items: center;
 }
 
-div.container {
+div.container.one {
     background-color: lightgray;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
+    padding: 2rem 1.5rem;
 }
 
-div.container.left {
-    padding: 2rem 1.5rem;
+div.container.one .left {
     text-align: left;
-    display: flex;
+    display: flexbox;
     flex-basis: width 60%;
 }
 
-div.container.right {
-    padding: 2rem 1.5rem;
+div.container.one .right {
     flex-basis: width 40%;
-    display: inline-flex;
+    display: flexbox;
     align-items: center;
-    justify-content: center;
+    padding-left: 1.5rem;
+    justify-content: flex-start;
 }
 
-.text {
+div.container.two {
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 1.5rem;
+}
+
+div.container.two .left {
+    text-align: left;
+    display: flexbox;
+    align-items: center;
+    justify-content: flex-start;
+    width: 60%;
+}
+
+div.container.two .right {
+    width: 40%;
+    display: flexbox;
+    align-items: center;
+    padding-left: 1.5rem;
+    justify-content: flex-start;
+}
+
+div.container.two .left .text {
     padding: 2rem 0;
     line-height: 1.5rem;
+    display: flexbox;
 }
 
 .start {
@@ -53,17 +80,17 @@ div.container.right {
 }
 
 .row {
-    height: 33%;
-    padding: 0.5rem;
+    height: auto;
+    width: 35%;
+    padding: 1rem;
     display: flex;
     align-content: center;
-    justify-content: space-between;
 }
 
 .guest {
     background-color: lightgrey;
-    height: 33%;
-    padding: 0.5rem;
+    height: auto;
+    padding: 1rem;
     display: flex;
     align-content: center;
     justify-content: space-between;
@@ -106,6 +133,19 @@ body {
     width: 99%;
 }
 
-h6 {
+h1 {
+    font-size: 3rem;
+}
+
+h5 {
     color: #0080ff;
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 1.75rem;
 }
